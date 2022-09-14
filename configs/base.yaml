@@ -37,7 +37,7 @@ data:
   type: ConcatData
   fold: 0
   num_folds: 5
-  batch_size: 32
+  batch_size: 16
   stratified_by: null
   group_by: null
   dataset:
