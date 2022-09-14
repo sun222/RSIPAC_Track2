@@ -64,7 +64,7 @@ train:
   weight_decay: 2e-5
 
   # scheduler
-  num_epochs: 20
+  num_epochs: 12
   scheduler: one_cycle
 
   # trainer
