@@ -67,7 +67,7 @@ def get_data(cfg):
 		                worker_init_fn = lambda id: np.random.seed(torch.initial_seed() // 2 ** 32 + id), 
                         **sampler)
 
-    def dl_valid(shuffle = False, num_workers = 8):
+    def dl_valid(shuffle = False, num_workers = 2):
         return DataLoader(ds_valid, batch_size, shuffle = shuffle, num_workers = num_workers)
 
     return (ds_train, ds_valid), (dl_train, dl_valid)
