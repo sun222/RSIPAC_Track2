@@ -11,7 +11,7 @@ from .builder import build_trans
 
 class ConcatData(BaseData):
     @staticmethod
-    def prepare(data_dir = "./data/train", **dataset_cfg):
+    def prepare(data_dir = "/kaggle/input/contest2/train", **dataset_cfg):
         train_images_A = sorted(glob.glob(os.path.join(data_dir, "A/*")))
         train_images_B = sorted(glob.glob(os.path.join(data_dir, "B/*")))
         train_labels = sorted(glob.glob(os.path.join(data_dir, "label/*")))
