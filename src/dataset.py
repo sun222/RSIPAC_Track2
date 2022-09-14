@@ -58,7 +58,7 @@ def get_data(cfg):
 
     sampler = torchsampler.ImbalancedDatasetSampler(ds_train) if ds_train.balance_key else None
 
-    def dl_train(shuffle = True, drop_last = True, num_workers = 8, sampler = sampler):
+    def dl_train(shuffle = True, drop_last = True, num_workers = 2, sampler = sampler):
         sampler = {"sampler": sampler} if sampler else {"shuffle": shuffle}
         return DataLoader(ds_train, 
                         batch_size, 
