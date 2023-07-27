@@ -14,7 +14,7 @@ import pycocotools.mask as mutils
 
 from src.models import *
 
-data_dir = "/kaggle/input/contest2/test_AB"
+data_dir = "/kaggle/input/cd2023/testA/testA"
 train_images_A = sorted(glob.glob(os.path.join(data_dir, "A/*")))
 train_images_B = sorted(glob.glob(os.path.join(data_dir, "B/*")))
 df = pd.DataFrame({"image_file_A": train_images_A, "image_file_B": train_images_B})
